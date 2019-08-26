@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:#33ccff;">
+
+    <body>
+        <h1>
+                <a href="http://localhost:8000">Home</a>
+                <a href="http://localhost:8000/newtask">Add New Task</a>
+        </h1>
+        
+        <table style="width:60%">
+                <tr>
+                  <th>Name</th>
+                  <th>Due Date</th> 
+                  <th>Description</th>
+                </tr>
+
+
+                <% for (let i = 0; i<ar.length; i++){%>
+                <tr></tr>  
+                    
+                    <td>
+                        <%= ar[i].taskName %>  
+                    </td>
+                    <td>
+                        <%= ar[i].taskDue %>  
+                    </td>
+                    <td>
+                        <%= ar[i].taskDes %>  
+                    </td>
+                  
+                </tr>
+                <%} %>
+              </table>
+              
+
+    </body>
+
+
+</html>
