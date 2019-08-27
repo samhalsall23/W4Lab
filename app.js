@@ -36,7 +36,6 @@ app.post('/newtask', function(req,res){
 });
 
 
-
 app.get('/listtasks', function(req,res){
     console.log('Hello from app.get');
     //res.send("Thanks for response");
